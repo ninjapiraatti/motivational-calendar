@@ -1,6 +1,5 @@
 <template>
 	<div class="container mx-auto min-h-screen px-4 py-10 bg-gradient-to-br from-yellow-50 to-yellow-100">
-		<h1 class="text-center text-4xl mt-10 mb-5">Motivational Calendar</h1>
 		<transition name="fade">
 			<QuarterPicker v-if="step === 1" @select="setQuarter" />
 			<IconPicker v-else-if="step === 2" @select="setIcons" />
